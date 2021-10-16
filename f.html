@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Once upon a time</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="new.css" type="text/css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+</style>
+<script language="javascript">
+	
+	function myFunction1() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+var UL = document.getElementById("myUL");
+// hilde the list by default
+UL.style.display = "none";
+
+var searchBox = document.getElementById("myInput");
+
+// show the list when the input receive focus
+searchBox.addEventListener("focus",  function(){
+    // UL.style.display = "block";
+});
+
+// hide the list when the input receive focus
+searchBox.addEventListener("blur", function(){
+    UL.style.display = "none";
+});
+
+
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    ul = document.getElementById("myUL");
+    filter = input.value.toUpperCase();
+    // if the input is empty hide the list
+    if(filter.trim().length < 1) {
+        ul.style.display = "none";
+        return false;
+    } else {
+        ul.style.display = "block";
+    }
+    
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        
+        // This is when you want to find words that contain the search string
+     if (a.innerHTML.toUpperCase().indexOf(filter) > -1) { 
+        li[i].style.display = "";
+     } else {
+        li[i].style.display = "none";
+    } 
+
+	}
+}
+
+
+</script></head>
+</head>
+<body>
+
+  <header class="header">
+    <img class="logoheader"src="Kidbuks1.png">
+   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for book title..." title="Type in a book title">
+   <ul id="myUL">
+     <li><a href="a.html">Ang daga at ang leon</a></li>
+     <li><a href="b.html">Ang aso at ang uwak</a></li>
+     <li><a href="c.html">Ang alamat ng butiki</a></li>
+     <li><a href="d.html">Ang alamat ng rosas</a></li>
+     <li><a href="e.html">Ang alamat ng saging</a></li>
+     <li><a href="f.html">Ang alamat ng sampaguita</a></li>
+     <li><a href="g.html">Ang alamat ng Pilipinas</a></li>
+     <li><a href="h.html">Talinghaga tungkol sa tatlong alipin</a></li>
+     <li><a href="i.html">Parabula sa sampung dalaga</a></li>
+     <li><a href="j.html">Parabula sa nawawalang tupa</a></li>
+     <li><a href="k.html">Ang babaeng maggagatas</a></li>
+     <li><a href="l.html">Ang babaeng ubod ng talino</a></li>
+     <li><a href="m.html">Bakit itim ang kulay ng uwak?</a></li>
+     <li><a href="n.html">Bakit dinadagit ng lawin ang mga sisiw?</a></li>
+     <li><a href="o.html">Si Juan na laging wala sa klase</a></li>
+     <li><a href="p.html">Count wisely</a></li>
+     <li><a href="q.html">The boy who cried wolf</a></li>
+     <li><a href="r.html">When adversity knocks</a></li>
+     <li><a href="s.html">The woodcutter and the golden axe</a></li>
+     <li><a href="t.html">The other side of the wall</a></li>
+     <li><a href="1.html">Good company, bad company</a></li>
+     <li><a href="2.html">Controlling anger</a></li>
+     <li><a href="3.html">True friends love you anyway</a></li>
+     <li><a href="4.html">The dog at the wall</a></li>
+     <li><a href="5.html">Bad habits</a></li>
+     <li><a href="6.html">The camel and the baby</a></li>
+     <li><a href="7.html">The farmer and the well</a></li>
+     <li><a href="8.html">The miser and his gold</a></li>
+     <li><a href="9.html">The four friends</a></li>
+     <li><a href="10.html">The wet pants</a></li>
+   
+     
+   </ul>
+   </header>
+   
+   <section>
+     <nav>
+       <table class="tab">
+     <tr onclick="window.location='new.html';"><td class="t"><img class="icon" src="home.png"><a class="link" href="new.html" target="books"> HOME</a></td></tr>
+   
+   <tr onclick="javascript: myFunction1('myDIV')"><td class="t"><img class="icon" src="books.png"><a class="dd" href ="#">BOOKS</a>
+   <div id="myDIV" class="dropdown-content">
+       <a href="1.html" target="books">► Good company, bad company</a>
+       <a href="2.html" target="books">► Controlling anger</a>
+       <a href="3.html" target="books">► True friends love you anyway</a>
+       <a href="4.html" target="books">► The dog at the wall</a>
+       <a href="5.html" target="books">► Bad habits</a>
+       <a href="6.html" target="books">► The camel and the baby</a>
+       <a href="7.html" target="books">► The farmer and the well</a>
+       <a href="8.html" target="books">► The miser and his gold</a>
+       <a href="9.html" target="books">► The four friends</a>
+       <a href="10.html" target="books">► The wet pants</a>    
+       <a href="a.html" target="books">► Ang daga at ang leon</a>
+       <a href="b.html" target="books">► Ang aso at ang uwak</a>
+       <a href="c.html" target="books">► Ang alamat ng butiki</a>
+     <a href="d.html" target="books">► Ang alamat ng rosas</a>
+       <a href="e.html" target="books">► Ang alamat ng saging</a>
+       <a href="f.html" target="books">► Ang alamat ng sampaguita</a>
+     <a href="g.html" target="books">► Ang alamat ng Pilipinas</a>
+       <a href="h.html" target="books">► Talinghaga tungkol sa tatlong alipin</a>
+       <a href="i.html" target="books">► Parabula sa sampung dalaga</a>
+     <a href="j.html" target="books">► Parabula sa nawawalang tupa</a>
+       <a href="k.html" target="books">► Ang babaeng maggagatas</a>
+       <a href="l.html" target="books">► Ang babaeng ubod ng talino</a>
+       <a href="m.html" target="books">► Bakit itim ang kulay ng uwak?</a>
+       <a href="n.html" target="books">► Bakit dinadagit ng lawin ang mga sisiw?</a>
+       <a href="o.html" target="books">► Si Juan na laging wala sa klase</a>
+       <a href="p.html" target="books">► Count wisely</a>
+       <a href="q.html" target="books">► The boy who cried wolf</a>
+       <a href="r.html" target="books">► When adversity knocks</a>
+       <a href="s.html" target="books">► The woodcutter and the golden axe</a>
+       <a href="t.html" target="books">► The other side of the wall</a>
+   </div></a></td></tr> 
+     <tr onclick="window.location='sources.html';"><td class="t"><img class="icon" src="comics.png"><a class="link" href="sources.html" target="b">SOURCE</a></td></tr>
+     <tr tr onclick="window.location='about.html';"><td class="t"><img class="icon" src="author.png"><a class="link" href="about.html" target="b">ABOUT</a></td></tr>
+   </table>
+   
+     </nav>
+  
+  <article>
+  <img class="bookss" src="sampaguita.jpg">
+		<a href="new.html"><img class="ex" src="exit.png"></a>
+		<div class="pg">
+		<h1 class="title">Ang alamat ng sampaguita</h1> 
+Sa isang malayong bayan sa Norte ay may isang napakagandang dalaga na Liwayway ang pangalan. <br>
+
+Ang kagandahan ni Liwayway ay nakarating hanggang sa malalayong bayan. Hindi naging kataka-taka kung bakit napakarami ng kanyang naging mga manliligaw. <br>
+
+Mula sa hilaga ay isang grupo ng mga mangangaso ang nagawi sa lugar nina Liwayway. Sa kasamaang palad, si Tanggol, isa sa mga ito ay inatake ng baboy-ramo. Ang binata ay dinala sa ama ni Liwayway para mabigyan ng pangunang lunas. Iyon ang naging daan ng paglakalapit nila. <br>
+
+Umibig sina Liwayway at Tanggol sa isa’t-isa sa maikling panahon ng pagkikilala. <br>
+
+Nang gumaling si Tanggol ito ay nagpaalam kay Liwayway at sa mga magulang niya. Anang binata ay susunduin ang ama’t ina upang pormal na hingin ang kamay ng dalaga. <br>
+
+Puno ng pangarap si Liwayway nang ihatid ng tanaw si Tanggol. <br>
+
+Subalit dagling naglaho ang pag-asa ni Liwayway na babalik si Tanggol tulad ng pangako. Ilang pagsikat na ng buwan mula nang umalis ito ngunit ni balita ay wala siyang natanggap. <br>
+
+Isang dating manliligaw ang nakaisip siraan si Tanggol. Ikinalat nito ang balita na hindi na babalik si Tanggol dahil may asawa na ito. <br>
+
+Tinalo ng lungkot, pangungulila, sama ng loob at panibugho ang puso ni Liwayway. Nagkasakit siya. Palibhasa ay sarili lang ang makagagamot sa karamdaman kung kaya ilang linggo lang ay naglubha ang dalaga at namatay. <br>
+
+Bago namatay ay wala siyang nausal kundi ang mga salitang, “Isinusumpa kita! Sumpa kita…” <br>
+
+Ang mga salitang “Isinusumpa kita! Sumpa kita…” ang tanging naiwan ni Lwayway kay Tanggol. <br>
+
+Ilang araw makaraang mailibing si Liwayway ay dumating si Tanggol kasama ang mga magulang. Anito ay hindi agad nakabalik dahil nagkasakit ang ina. Hindi matanggap ng binata na wala na ang babaing pinakamamahal. <br>
+
+Sa sobrang paghihinagpis, araw-araw ay halos madilig ng luha ni Tanggol ang puntod ni Liwayway. Hindi na rin siya bumalik sa sariling bayan upang mabantayan ang puntod ng kasintahan. <br>
+
+Isang araw ay may napansin si Tanggol sa ibabaw ng puntod ni Liwayway. May tumubong halaman doon, halaman na patuloy na dinilig ng kanyang mga luha. Nang mamulaklak ang halaman ay may samyo iyon na ubod ng bango. <br>
+
+Tinawag iyong ‘sumpa kita’, ang mga huling salitang binigkas ni Liwayway bago namatay. Ang ‘sumpa kita’ ay ang pinagmulan ng salitang ‘sampaguita’. <br>
+<br>
+Aral: <br>
+★ Huwag makinig sa mga sabi-sabi. Gayundin naman, huwag gumawa ng hindi totoong kwento tungkol sa iba dahil wala itong mabuting maidudulot kaninuman. <br>
+★ Kadalasan, ang paghihintay ay matagal. Ngunit kung tayo ay may tiyaga, siguradong may magandang kahihinatnan ang iyong paghihintay.
+</div>
+
+<a href="e.html"> <img class="left" src="left.png"></a>
+ <a href="g.html"> <img class="right" src="right.png"></a>
+</section>
+
+
+</body>
+</html>

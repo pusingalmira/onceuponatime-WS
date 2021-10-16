@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Once upon a time</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="new.css" type="text/css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+</style>
+<script language="javascript">
+	
+	function myFunction1() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    ul = document.getElementById("myUL");
+    filter = input.value.toUpperCase();
+    // if the input is empty hide the list
+    if(filter.trim().length < 1) {
+        ul.style.display = "none";
+        return false;
+    } else {
+        ul.style.display = "block";
+    }
+    
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        
+        // This is when you want to find words that contain the search string
+     if (a.innerHTML.toUpperCase().indexOf(filter) > -1) { 
+        li[i].style.display = "";
+     } else {
+        li[i].style.display = "none";
+    } 
+
+	}
+}
+
+
+</script></head>
+</head>
+<body>
+
+  <header class="header">
+    <img class="logoheader"src="Kidbuks1.png">
+   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for book title..." title="Type in a book title">
+   <ul id="myUL">
+     <li><a href="a.html">Ang daga at ang leon</a></li>
+     <li><a href="b.html">Ang aso at ang uwak</a></li>
+     <li><a href="c.html">Ang alamat ng butiki</a></li>
+     <li><a href="d.html">Ang alamat ng rosas</a></li>
+     <li><a href="e.html">Ang alamat ng saging</a></li>
+     <li><a href="f.html">Ang alamat ng sampaguita</a></li>
+     <li><a href="g.html">Ang alamat ng Pilipinas</a></li>
+     <li><a href="h.html">Talinghaga tungkol sa tatlong alipin</a></li>
+     <li><a href="i.html">Parabula sa sampung dalaga</a></li>
+     <li><a href="j.html">Parabula sa nawawalang tupa</a></li>
+     <li><a href="k.html">Ang babaeng maggagatas</a></li>
+     <li><a href="l.html">Ang babaeng ubod ng talino</a></li>
+     <li><a href="m.html">Bakit itim ang kulay ng uwak?</a></li>
+     <li><a href="n.html">Bakit dinadagit ng lawin ang mga sisiw?</a></li>
+     <li><a href="o.html">Si Juan na laging wala sa klase</a></li>
+     <li><a href="p.html">Count wisely</a></li>
+     <li><a href="q.html">The boy who cried wolf</a></li>
+     <li><a href="r.html">When adversity knocks</a></li>
+     <li><a href="s.html">The woodcutter and the golden axe</a></li>
+     <li><a href="t.html">The other side of the wall</a></li>
+     <li><a href="1.html">Good company, bad company</a></li>
+     <li><a href="2.html">Controlling anger</a></li>
+     <li><a href="3.html">True friends love you anyway</a></li>
+     <li><a href="4.html">The dog at the wall</a></li>
+     <li><a href="5.html">Bad habits</a></li>
+     <li><a href="6.html">The camel and the baby</a></li>
+     <li><a href="7.html">The farmer and the well</a></li>
+     <li><a href="8.html">The miser and his gold</a></li>
+     <li><a href="9.html">The four friends</a></li>
+     <li><a href="10.html">The wet pants</a></li>
+   
+     
+   </ul>
+   </header>
+   
+   <section>
+     <nav>
+       <table class="tab">
+     <tr onclick="window.location='new.html';"><td class="t"><img class="icon" src="home.png"><a class="link" href="new.html" target="books"> HOME</a></td></tr>
+   
+   <tr onclick="javascript: myFunction1('myDIV')"><td class="t"><img class="icon" src="books.png"><a class="dd" href ="#">BOOKS</a>
+   <div id="myDIV" class="dropdown-content">
+       <a href="1.html" target="books">► Good company, bad company</a>
+       <a href="2.html" target="books">► Controlling anger</a>
+       <a href="3.html" target="books">► True friends love you anyway</a>
+       <a href="4.html" target="books">► The dog at the wall</a>
+       <a href="5.html" target="books">► Bad habits</a>
+       <a href="6.html" target="books">► The camel and the baby</a>
+       <a href="7.html" target="books">► The farmer and the well</a>
+       <a href="8.html" target="books">► The miser and his gold</a>
+       <a href="9.html" target="books">► The four friends</a>
+       <a href="10.html" target="books">► The wet pants</a>    
+       <a href="a.html" target="books">► Ang daga at ang leon</a>
+       <a href="b.html" target="books">► Ang aso at ang uwak</a>
+       <a href="c.html" target="books">► Ang alamat ng butiki</a>
+     <a href="d.html" target="books">► Ang alamat ng rosas</a>
+       <a href="e.html" target="books">► Ang alamat ng saging</a>
+       <a href="f.html" target="books">► Ang alamat ng sampaguita</a>
+     <a href="g.html" target="books">► Ang alamat ng Pilipinas</a>
+       <a href="h.html" target="books">► Talinghaga tungkol sa tatlong alipin</a>
+       <a href="i.html" target="books">► Parabula sa sampung dalaga</a>
+     <a href="j.html" target="books">► Parabula sa nawawalang tupa</a>
+       <a href="k.html" target="books">► Ang babaeng maggagatas</a>
+       <a href="l.html" target="books">► Ang babaeng ubod ng talino</a>
+       <a href="m.html" target="books">► Bakit itim ang kulay ng uwak?</a>
+       <a href="n.html" target="books">► Bakit dinadagit ng lawin ang mga sisiw?</a>
+       <a href="o.html" target="books">► Si Juan na laging wala sa klase</a>
+       <a href="p.html" target="books">► Count wisely</a>
+       <a href="q.html" target="books">► The boy who cried wolf</a>
+       <a href="r.html" target="books">► When adversity knocks</a>
+       <a href="s.html" target="books">► The woodcutter and the golden axe</a>
+       <a href="t.html" target="books">► The other side of the wall</a>
+   </div></a></td></tr> 
+     <tr onclick="window.location='sources.html';"><td class="t"><img class="icon" src="comics.png"><a class="link" href="sources.html" target="b">SOURCE</a></td></tr>
+     <tr tr onclick="window.location='about.html';"><td class="t"><img class="icon" src="author.png"><a class="link" href="about.html" target="b">ABOUT</a></td></tr>
+   </table>
+   
+     </nav>
+  
+  <article>
+  <img class="bookss" src="lawin.jpg">
+		<a href="new.html"><img class="ex" src="exit.png"></a>
+		<div class="pg">
+		<h1 class="title">Bakit dinadagit ng lawin ang mga sisiw?</h1> 
+
+Taga-lunsod sina Roy at Lorna. Ibig na ibig nila ang pagtira sa bukid nina Lola Anding at Lolo Andres tuwing bakasyon. Marami at sariwa ang pagkain sa bukid. Bukod dito, marami rin bagong karanasan at kaalaman ang kanilang natutuhan. <br>
+Isang tanghali, habang nangangakyat ang magkapatid sa punong bayabas, ay kitang-kita nila ang lawin na lumilipad pababa. Nagtakbuhan ang mga sisiw sa ilalim ng damo. Naiwan ang inahing manok na anyong lalaban sa lawin. <br>
+
+Mabilis na bumaba sa punong bayabas ang magkapatid at sinigawan nila ang lawin na mabilis na lumipad papalayo. Natawag ang pansin nina Lola Anding at Lolo Andres sa sigaw ng magkakapatid. Mabilis silang nanaog ng bahay at inalam kung ano ang nangyayari. <br>
+
+Kitang-kita po namin na dadagitin ng lawin ang mga sisiw ng inahing manok kaya sumigaw po kami, paliwanang ni Roy. <br>
+
+“Lolo, bakit po ba dinadagit ng lawin ang mga sisiw ng inahing manok?” tanong ni Lorna. <br>
+
+May magandang kuwento ang inyong Lola Anding na sasagot sa inyong tanong na iyon, sagot ni Lolo Andres. <br>
+
+Halina na kayo sa upuang nasa lilim ng punong bayabas, wika ni Lola Anding. Makinig kayong mabuti. Ganito ang kuwento. <br>
+
+Noong araw, magkaibigan si Inahing Manok at si Lawin. Minsan, nanghiram ng singsing si Inahing Manok kay Lawin upang gamitin niya sa pista sa kabilang nayon. Naroroon si Tandang at ibig niyang maging maganda sa paningin nito. Tinanggal ni Lawin ang suot niyang singsing at ibinigay niya ito kay Inahing Manok. <br>
+
+“Ingatan mong mabuti ang singsing ko, Inahing Manok. Napakahalaga niyan sapagkat bigay pa iyan sa akin ng aking ina.” <br>
+
+Maluwag sa daliri ni Inahing Manok ang hiniram sa singsing ngunit isinuot pa rin niya ito. <br>
+
+“Salamat, Lawin”, wika ni Inahing Manok. “Asahan mong iingatan ko ang iyong singsing.” <br>
+
+Kinabukasan, maaga pa lamang ay nagbihis na si Inahing Manok. Isinuot niya ang hiniram na singsing at pumunta na sa kabilang nayon. Maraming bisita si Tandang at nagsasayawan na sila nang dumating si Inahing Manok. Nang makita ni Tandang si Inahing Manok ay kaagad niyang sinalubong nito at isinayaw. Masaya ang pista. Sari-sari ang handa ni Tandang. Tumagal ang sayawan hanggang sa antukin na si Inahing Manok. <br>
+
+Pagkagising ni Inahing Manok ng umagang iyon ay napansin niyang nawawala ang hiniram niyang singsing kay Lawin. Natakot si Inahing Manok na baka tuluyang mawala ang hiniram niyang singsing. Kaya hanap dito, hanap doon, kahig dito, kahig doon ang ginawa ni Inahing Manok. Ngunit hindi niya makita ang nawawalang singsing. Nagalit si Lawin at sinabi na kapag hindi nakita ni Inahing Manok ang singsing ay kukunin at kanyang dadagitin ang magiging anak na sisiw ni Inahing Manok. <br>
+
+Araw-araw ay naghahanap si Inahing Manok ng nawawalang singsing. Maging ang iba pang inahing manok ay naghahanap na rin ng nawawalang singsing upang hindi dagitin ni Lawin ang kanilang mga sisiw. Ngunit hindi nila makita ito hanggang tuluyan nang magkagalit si Lawin at si Inahing Manok. <br>
+
+Namatay na si Inahing Manok at namatay na rin si Lawin ngunit magkagalit pa rin ang humaliling mga inahing manok at Lawin. Magmula na noon hanggang sa kasalukuyan ay di pa nakikita ang nawawalang singsing kaya dinadagit pa ng lawin ang mga sisiw ng inahing manok. <br><br>
+
+Aral: <br>
+★ Pag-ingatan ang mga bagay na hindi mo pag-aari. Kung marunong manghiram ay dapat marunong din magsauli. <br>
+★ Hindi sa ganda o gara ng isinusuot makikita ang halaga ng isang tao kundi sa kung paano siya kahusay makisama sa iba. <br>
+</div>
+
+<a href="m.html"> <img class="left" src="left.png"></a>
+ <a href="o.html"> <img class="right" src="right.png"></a>
+</section>
+
+
+</body>
+</html>

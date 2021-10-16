@@ -1,0 +1,470 @@
+
+
+
+/* Style the header */
+body{
+	background-color: #8B1E3F;
+	width: auto;
+	height: auto;
+}
+
+
+
+header {
+	padding: 10px;
+	padding-top: 2px;
+	text-align: left;
+	font-size: 15px;
+	font-family: comic Sans MS;
+	color: white;
+	background-color: #3C153B;
+
+ /*	background-color: #2c5f2dff; */
+}
+
+.logoheader{
+	width: 223px;
+	height: 82px;
+	margin-top: 7px;
+	margin-left: 10px;
+}
+
+* {
+	box-sizing: border-box;
+  }
+  
+	
+  #myInput {
+	width: 60%;
+	font-size: 14px;
+	padding: 12px 20px 12px 20px;
+	border: 2.5px solid #8B1E3F;
+	margin-left: 150px;
+	position: absolute;
+	margin-top: 25px;
+	background-color: #F0C987;
+  }
+  
+  #myUL {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	width: 60%;
+	margin-top: -22px;
+	margin-left: 382px;
+	position: absolute;
+	display: none;
+	opacity: 90%;
+	z-index: 1;
+	overflow-y: auto;
+	height: 70%;
+  }
+  
+  #myUL li a {
+	border: 0.5px solid #8B1E3F;
+	margin-top: -1px; /* Prevent double borders */
+	background-color: #F0C987;
+	padding: 8px;
+	text-decoration: none;
+	font-size: 14px;
+	color: black;
+	display: block;
+	
+  }
+
+ #myUL li a:hover{
+	background-color: #DB4C40;
+ }
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+	float: left;
+	width: 20%;
+	height: 573px;
+	padding: 20px;
+	background-color: #3C153B;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 2%;
+}
+
+article {
+	float: left;
+	width: 80%;
+	padding: 20px;
+	height: 573px; /* only for demonstration, should be removed */
+	background-image: url(qwerty.png);
+} 
+
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Nav */
+
+a.dd{
+font-family: Comic Sans MS;
+font-size: 11pt;
+color: white;
+text-decoration: none;
+margin-right: 70px;
+float: right;
+margin-top: 10px;
+border: none;
+display: inline;
+
+
+}
+/*
+a:hover.dd{
+ background-color: #DB4C40;
+} */
+
+.dropdown-content {
+display: none;
+height: 250px;
+overflow-y: auto;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  font-family: Comic Sans MS;
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 10pt;
+
+}
+
+.dropdown-content a:hover{
+	background-color: gray;
+} 
+
+
+a.link{
+font-family: Comic Sans MS;
+font-size: 11pt;
+color: white;
+text-decoration: none;
+margin-right: 70px;
+float: right;
+margin-top: 10px;
+border: none;
+display: inline;
+
+
+}
+
+
+/*
+a:hover.link{
+ background-color: #DB4C40;
+} */
+
+td.t {
+	background: #8B1E3F;
+	width: 220px;
+	height: 15px;
+	}
+	
+td.t:hover{
+	background-color: #DB4C40;
+} 
+	
+
+img.icon{
+	width: 35px;
+	height: 35px;
+	display: inline;
+	margin-left: 40px;
+}
+
+
+/* for article */
+
+table.tabbooks{
+	border-collapse: collapse;
+	width: 998px;	
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1px;
+	opacity: 97%;
+	
+	
+}
+td{
+	height: 100px;
+	width: 85px;
+	border: 1.5px solid #DB4C40;
+	background: #8B1E3F;
+	margin-left: auto;
+	margin-right: auto;
+}
+td:hover{
+	background-color: #DB4C40;
+	opacity: 85%;
+} 
+
+img.booky{
+	height: 150px;
+	width: 110px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+
+}
+
+h5{
+	font-family: Comic Sans MS;
+	font-size: 12pt;	
+	color: white;
+	text-align: center;
+	margin: 20px;
+	margin-top: 10px;
+}
+
+
+img.prev {
+	position: absolute;
+	left: 790px;
+	width: 30px;
+	height: 30px;
+	margin-top: 513px;
+	
+	
+  }
+  
+  img.next {
+	position: absolute;
+	right: 505px;
+	width: 30px;
+	height: 30px;
+	margin-top: 513px;
+	
+  }
+  
+  
+  img:hover.prev, img:hover.next{
+	  opacity: 0.5;
+  }
+  
+  /* header */
+  
+  img.header{
+	  width: 680px;
+	  height: 130px;
+	  margin-top: 5px;
+  }
+
+
+/*book content*/
+
+div.pg{
+	position: fixed;
+	margin-top: -18px;
+	margin-bottom: 10px;
+	margin-left: 375px;
+	width: 600px;
+	height: 571px;
+	background: white;
+	border: ridge;
+	border-width: thick;
+	border-color: #DB4C40;
+	font-family: Comic Sans MS;
+	font-size: 12pt;
+	color: Black;
+	overflow: auto;
+	display: inline;
+	opacity: 80.7%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	z-index: 0;
+	
+	
+	}
+	
+img.bookss{
+	position: absolute;
+	display: inline;
+	width: 280;
+	height: 410px;
+	margin-left: 25px;
+	margin-top: 35px;
+	border: thick;
+	z-index: 0;
+	
+	
+}
+
+h1.title{
+	font-family: Forte;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 25px;
+	
+}
+
+img.ex{
+	float: right;
+	width: 32px;
+	height: 32px;
+	border: 1px solid red;
+	
+}
+
+img:hover.ex{
+	opacity: 0.5;
+	
+}
+	
+img.left {
+  position: absolute;
+  left: 430px;
+  width: 40px;
+  height: 40px;
+  margin-top: 480px;
+  
+  
+}
+
+img.right {
+  position: absolute;
+  right: 845px;
+  width: 40px;
+  height: 40px;
+  margin-top: 480px;
+  
+}
+
+
+img:hover.left, img:hover.right{
+	opacity: 0.5;
+}
+
+/* header */
+
+img.header{
+	width: 680px;
+	height: 130px;
+	margin-top: 5px;
+}
+
+
+/* for sources button */
+.sourcefield{
+	position: fixed;
+	margin-top: 70px;
+	margin-bottom: 10px;
+	margin-left: 165px;
+	width: 700px;
+	height: 397px;
+	background: white;
+	border: ridge;
+	border-width: thick;
+	border-color: #DB4C40;
+	font-family: Comic Sans MS;
+	font-size: 12pt;
+	color: Black;
+	overflow: auto;
+	display: inline;
+	opacity: 75%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	z-index: 0;
+}
+
+/* for about button */
+.aboutfield{
+	position: fixed;
+	margin-top: 100px;
+	margin-bottom: 10px;
+	margin-left: 165px;
+	width: 700px;
+	height: 265px;
+	background: white;
+	border: ridge;
+	border-width: thick;
+	border-color: #DB4C40;
+	font-family: Comic Sans MS;
+	font-size: 12pt;
+	text-align: center;
+	color: Black;
+	overflow: auto;
+	display: inline;
+	opacity: 75%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	z-index: 0;
+}
+
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+	overflow: hidden;
+	background-color: #e9e9e9;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  /* Style the "active" element to highlight the current page */
+  .topnav a.active {
+	background-color: #2196F3;
+	color: white;
+  }
+  
+  /* Style the search box inside the navigation bar */
+  .topnav input[type=text] {
+	float: right;
+	padding: 6px;
+	border: none;
+	margin-top: 8px;
+	margin-right: 16px;
+	font-size: 17px;
+  }
+  
+  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+  @media screen and (max-width: 600px) {
+	.topnav a, .topnav input[type=text] {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	  width: 100%;
+	  margin: 0;
+	  padding: 14px;
+	}
+	.topnav input[type=text] {
+	  border: 1px solid #ccc;
+	}
+  }
+

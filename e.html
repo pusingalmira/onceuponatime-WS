@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Once upon a time</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="new.css" type="text/css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+</style>
+<script language="javascript">
+	
+	function myFunction1() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+var UL = document.getElementById("myUL");
+// hilde the list by default
+UL.style.display = "none";
+
+var searchBox = document.getElementById("myInput");
+
+// show the list when the input receive focus
+searchBox.addEventListener("focus",  function(){
+    // UL.style.display = "block";
+});
+
+// hide the list when the input receive focus
+searchBox.addEventListener("blur", function(){
+    UL.style.display = "none";
+});
+
+
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    ul = document.getElementById("myUL");
+    filter = input.value.toUpperCase();
+    // if the input is empty hide the list
+    if(filter.trim().length < 1) {
+        ul.style.display = "none";
+        return false;
+    } else {
+        ul.style.display = "block";
+    }
+    
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        
+        // This is when you want to find words that contain the search string
+     if (a.innerHTML.toUpperCase().indexOf(filter) > -1) { 
+        li[i].style.display = "";
+     } else {
+        li[i].style.display = "none";
+    } 
+
+	}
+}
+
+
+</script></head>
+</head>
+<body>
+
+  <header class="header">
+    <img class="logoheader"src="Kidbuks1.png">
+   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for book title..." title="Type in a book title">
+   <ul id="myUL">
+     <li><a href="a.html">Ang daga at ang leon</a></li>
+     <li><a href="b.html">Ang aso at ang uwak</a></li>
+     <li><a href="c.html">Ang alamat ng butiki</a></li>
+     <li><a href="d.html">Ang alamat ng rosas</a></li>
+     <li><a href="e.html">Ang alamat ng saging</a></li>
+     <li><a href="f.html">Ang alamat ng sampaguita</a></li>
+     <li><a href="g.html">Ang alamat ng Pilipinas</a></li>
+     <li><a href="h.html">Talinghaga tungkol sa tatlong alipin</a></li>
+     <li><a href="i.html">Parabula sa sampung dalaga</a></li>
+     <li><a href="j.html">Parabula sa nawawalang tupa</a></li>
+     <li><a href="k.html">Ang babaeng maggagatas</a></li>
+     <li><a href="l.html">Ang babaeng ubod ng talino</a></li>
+     <li><a href="m.html">Bakit itim ang kulay ng uwak?</a></li>
+     <li><a href="n.html">Bakit dinadagit ng lawin ang mga sisiw?</a></li>
+     <li><a href="o.html">Si Juan na laging wala sa klase</a></li>
+     <li><a href="p.html">Count wisely</a></li>
+     <li><a href="q.html">The boy who cried wolf</a></li>
+     <li><a href="r.html">When adversity knocks</a></li>
+     <li><a href="s.html">The woodcutter and the golden axe</a></li>
+     <li><a href="t.html">The other side of the wall</a></li>
+     <li><a href="1.html">Good company, bad company</a></li>
+     <li><a href="2.html">Controlling anger</a></li>
+     <li><a href="3.html">True friends love you anyway</a></li>
+     <li><a href="4.html">The dog at the wall</a></li>
+     <li><a href="5.html">Bad habits</a></li>
+     <li><a href="6.html">The camel and the baby</a></li>
+     <li><a href="7.html">The farmer and the well</a></li>
+     <li><a href="8.html">The miser and his gold</a></li>
+     <li><a href="9.html">The four friends</a></li>
+     <li><a href="10.html">The wet pants</a></li>
+   
+     
+   </ul>
+   </header>
+   
+   <section>
+     <nav>
+       <table class="tab">
+     <tr onclick="window.location='new.html';"><td class="t"><img class="icon" src="home.png"><a class="link" href="new.html" target="books"> HOME</a></td></tr>
+   
+   <tr onclick="javascript: myFunction1('myDIV')"><td class="t"><img class="icon" src="books.png"><a class="dd" href ="#">BOOKS</a>
+   <div id="myDIV" class="dropdown-content">
+       <a href="1.html" target="books">► Good company, bad company</a>
+       <a href="2.html" target="books">► Controlling anger</a>
+       <a href="3.html" target="books">► True friends love you anyway</a>
+       <a href="4.html" target="books">► The dog at the wall</a>
+       <a href="5.html" target="books">► Bad habits</a>
+       <a href="6.html" target="books">► The camel and the baby</a>
+       <a href="7.html" target="books">► The farmer and the well</a>
+       <a href="8.html" target="books">► The miser and his gold</a>
+       <a href="9.html" target="books">► The four friends</a>
+       <a href="10.html" target="books">► The wet pants</a>    
+       <a href="a.html" target="books">► Ang daga at ang leon</a>
+       <a href="b.html" target="books">► Ang aso at ang uwak</a>
+       <a href="c.html" target="books">► Ang alamat ng butiki</a>
+     <a href="d.html" target="books">► Ang alamat ng rosas</a>
+       <a href="e.html" target="books">► Ang alamat ng saging</a>
+       <a href="f.html" target="books">► Ang alamat ng sampaguita</a>
+     <a href="g.html" target="books">► Ang alamat ng Pilipinas</a>
+       <a href="h.html" target="books">► Talinghaga tungkol sa tatlong alipin</a>
+       <a href="i.html" target="books">► Parabula sa sampung dalaga</a>
+     <a href="j.html" target="books">► Parabula sa nawawalang tupa</a>
+       <a href="k.html" target="books">► Ang babaeng maggagatas</a>
+       <a href="l.html" target="books">► Ang babaeng ubod ng talino</a>
+       <a href="m.html" target="books">► Bakit itim ang kulay ng uwak?</a>
+       <a href="n.html" target="books">► Bakit dinadagit ng lawin ang mga sisiw?</a>
+       <a href="o.html" target="books">► Si Juan na laging wala sa klase</a>
+       <a href="p.html" target="books">► Count wisely</a>
+       <a href="q.html" target="books">► The boy who cried wolf</a>
+       <a href="r.html" target="books">► When adversity knocks</a>
+       <a href="s.html" target="books">► The woodcutter and the golden axe</a>
+       <a href="t.html" target="books">► The other side of the wall</a>
+   </div></a></td></tr> 
+     <tr onclick="window.location='sources.html';"><td class="t"><img class="icon" src="comics.png"><a class="link" href="sources.html" target="b">SOURCE</a></td></tr>
+     <tr tr onclick="window.location='about.html';"><td class="t"><img class="icon" src="author.png"><a class="link" href="about.html" target="b">ABOUT</a></td></tr>
+   </table>
+   
+     </nav>
+  
+  <article>
+  <img class="bookss" src="saging.jpg">
+		<a href="new.html"><img class="ex" src="exit.png"></a>
+		<div class="pg">
+		<h1 class="title">Alamat ng saging</h1> 
+Sa isang nayon ay may mag-anak na tahimik na namumuhay. Ang lalaki’y si Mang Bino at ang babae’y si Aling Pacita. <br>
+
+Ang kaisa-isa nilang anak ay si Tina. Lumaking maganda si Tina kaya’t maraming nangibig sa kanya. Ngunit mataas ang pangarap ng mga magulang para sa kaisa-isang anak. <br>
+
+Kaya kapag mahirap na binata ang pumapanhik ng ligaw sa dalaga ay pinapakitaan ito ng masamang mukha ng mag-asawa. <br>
+
+Malimit pang pagparunggitan ang mga maralitang mangingibig na sayang lamang ang taglay na kagandahan ng kanilang anak kung ang magiging kapalaran nito ay isa lamang maralitang isang kahig isang tuka. <br>
+
+Kabilang sa mga naakit kay Tina ay si Rading. Makisig siyang binata, may magandang asal, at may likas na kabaitan. Ngunit siya ay isa lamang maralitang magsasaka kaya’t sa kabila ng mga katangian ng binata ay tutol na tutol sa kanya ang mga magulang ni Tina. <br>
+
+Sa kabila ng pamimintas sa binata ng mga magulang ng dalaga ay tinanggap pa rin ni Tina ang iniluluhog na pag-ibig ni Rading. <br>
+
+Nagsumpaan silang walang magtataksil at tanging kamatayan lamang ang maaaring humadlang sa kanilang pag-iibigan. Lihim na lihim ang kanilang pagsusuyuan sa pangambang malaman ito ng mga magulang ng dalaga. <br>
+
+Ang kagandahan ni Tina ay nakaabot sa pandinig ni Don Bruno. Siya’y naninirahan sa kabayanan at nang mabalitaan niya ang tungkol sa kagandahan ng dalaga ay ipinasya niyang pagsadyain ito sa nayon. <br>
+
+Lulan ng magarang kotse, ang byudong si Don Bruno ay nagtungo sa tahanan ng dalaga. <br>
+
+Sa pamamagitan ng pagtatanong ay natunton niya ang tirahan nito. Nakipagkilala siya sa mag-anak at gayon na lamang ang pag-istima ng mag-asawang Mang Bino at Aling Pacita sa mayamang panauhin. <br>
+
+Naging madalas ang pagdalaw ni Don Bruno at di nagtagal ay nagtapat ng pag-ibig sa dalaga. <br>
+
+Tinanggihan ni Tina ang inihahandog na pag-ibig nito. Naging mapilit ang byudo kaya’t napilitan ang dalagang tapatin ito na wala siyang pag-ibig dito at ang puso niya’y nakasanla na sa iba. <br>
+
+Ayaw maniwala si Don Bruno dahil liban sa kanya, wala raw naman siyang nakikitang pumapanhik ng ligaw sa dalaga. <br>
+
+Ito ay sapagkat napakahigpit nga ng mga magulang ni Tina. Sinabi rin niyang hindi siya titigil ng panunuyo sa dalaga, maliban na lang kung mapatutunayan niyang may katipan na nga ito. <br>
+
+Sa sandaling mangyari ito, nangako siyang hindi na niya ito gagambalain pa. At kung ipagtatapat ng dalaga kung sino ang katipan nito ay hindi niya sasabihin ang lihim kahit kanino. <br>
+
+Sa kagustuhan ni Tina na tumigil na sa panliligaw ang matanda, ipinagtapat niya na si Rading ay kasintahan na niya. Hindi nagpahalata ng sama ng loob ang byudo, ngunit may lihim siyang binabalak upang mapasakanya ang dalaga. <br>
+
+Isang araw na umalis si Tina at sumama sa kaibigan sa pamimili sa kabayanan ay kinausap ng Don ang mga magulang na dalaga. <br>
+
+Ipinagtapat niya sa mga ito ang tungkol kina Tina at Rading. Gayon na lamang ang galit ni Mang Bino ngunit sinikap ni Don Bruno na mapaglubag ang kalooban ng ama ni Tina. Iminungkahi niya na kung papayag ang mag-asawa ay ibig niyang makasal sila agad ni Tina. <br>
+
+Palibhasa’y mayaman hindi tinutulan ng mga magulang ng dalaga ang plano ni Don Bruno. Napagkasunduan nilang idaraos ang kasal sa lalong madaling panahon. <br>
+
+Simula noon ay hinigpitang lalo ng mga magulang ang dalaga. Hindi na siya pinalalabas ng bahay nang walang kasama. Ang palaging kasama niya sa anumang pupuntahan ay ang kanyang ina. Ang lihim na pagkikita nina Rading at Tina ay naputol. <br>
+
+Hindi malaman ng binata ang gagawin upang makausap ang katipan. Malimit na aali-aligid siya sa tahanan ng mag-anak upang masilayan man lamang ang minamahal. Subalit lagi siyang umu-uwing bigo. <br>
+
+Isang tanghali ay nakita niyang mag-isang umalis ng bahay si Aling Pacita. Dala nito ang basket na kinalalagyan ng pagkaing ihahatid sa asawang nag-aararo sa bukid. <br>
+
+Dati-rati’y kasama ng ina ang dalaga. Hindi niya ito iniiwang mag-isa sa bahay sa pangambang magtungo roon ang kasintahan at magkausap ang dalawa. <br>
+
+Nang tanghaling iyon ay hindi napilit ng ina na sumama si Tina sa paghahatid ng pagkain sa bukid. Dumaing ang dalaga na masakit na masakit ang kanyang ulo at nang damahin ng ina ang noo ng anak ay mainit at tila may sinat nga ito. <br>
+
+Pagkaalis ni Aling Pacita ay dali-daling tinungo ni Rading ang tahanan ng mag-anak at nagpatao-po. Nang maulinigan ng dalaga ang tinig ng kasintahan ay pinilit niyang makabangon kahit masamang-masama ang kanyang pakiramdam. <br>
+
+Pinatuloy ni Tina ang binata at magkaharap silang naupo sa dalawang silyang napapagitnaan ng isang maliliit na mesa sa may tabi ng bintana. <br>
+
+Sabik na nagkumustahan ang magkasintahang matagal-tagal ding di nagkita. Palibhasa’y noon lamang muling nagkita, hindi matapus-tapos ang pagbabalitaan ng dalawa. Libang na libang sila sa pag-uusap at hindi na nila pansin ang kapaligiran. <br>
+
+Hindi nila namalayan ang pagdating ng humahangos na si Mang Bino, kasunod ang humahabol na asawa. May nakapagbalita pala kay Mang Bino sa bukid na nasa kanilang bahay si Rading kaya’t napasugod nang uwi ang matandang lalaki. <br>
+
+Galit na galit ang ama ni Tina pagkakita sa dalawang nag-uusap sa tabi ng bintana. Hawak ang matalim na gulok ay biglang sinugod ng matandang lalaki si Rading at biglang tinaga ang kamay ng binata na nagkataong nakalawit sa bintana. <br>
+
+Palibhasa’y mababa ang bahay ng mag-anak kaya nakuhang abutin ni Mang Bino ang kamay ng binata. Naputol ang kamay ni Rading at bumagsak sa lupa. Napatili si Tina at nawalan ng malay-tao nang makita ang pangyayari. <br>
+
+Sapo ang duguang bisig ay tumakbong pauwi ang binata. Kaagad siyang isinugod sa kabayanan upang dalhin sa pagamutan doon. Subalit sa daan pa lamang ay nalagutan na ng hininga ang binata dahil sa dami ng dugong nawala sa kanyang katawan. <br>
+
+Ang kabayanan ay lubhang malayo sa kanilang nayon. <br>
+
+Nang magkamalay si Tina ay nasa loob na siya ng sariling silid. Ang namulatan niya sa kanyang tabi ay ang kanyang ina. Itinanong niya rito si Rading at ang kanyang ama. <br>
+
+Napahagulgol siya ng panangis nang malaman niyang ang binata ay hindi na umabot sa pagamutan at ang kanyang ama naman ay dinala ng mga maykapangyarihan. Nagpumilit siyang bumangon at hindi napigil ng ina sa paglabas ng bahay. <br>
+
+Tinungo niya ang lugar na kinabagsakan ng kamay ni Rading at buong pagmamahal na niyakap ang putol na kamay. <br>
+
+Ibinaon niya ang kamay sa kanyang halamanan. At sa umaga’t hapon sa araw-araw na ginawa ng Diyos ay hinahaplus-haplos niya ang lupang nakatabon sa kamay ng minamahal habang lumuluhang sinasambit-sambit ang “Rading. Rading.” <br>
+
+Hindi nagtagal ay may tumubong halaman sa pook na iyon at nang mamunga ay katulad na katulad ng mga daliri ng kamay ni Rading. Kumalat ang balita sa nayong iyon at naging paksa ng usapan ang kamay ni Rading. <br>
+
+Tinawag ng mga tao ang bunga ng naturang halaman na kamay ni Rading. Nang lumaon ay ipinasya nilang tawagin itong saging. <br>
+<br>
+Aral:<br>
+★ Ang pagiging matapobre ay walang mabuting maidudulot kanino man. Kung ang iyong anak ay umibig man sa dukha, maaring ito ay may dahilan. Kausapin ng masinsinan ang anak dahil wala namang bagay na hindi nakukuha sa mabuting usapan. Gayundin naman sa mga anak. Iwasang maglihim sa mga magulang upang maiwasan ang gulo sa pamilya.<br>
+★ Huwag maging mapilit lalo na sa pag-ibig. Kung ayaw sa iyo ng taong iyong minamahal, respetuhin ito at huwag nang ipilit ang iyong sarili. Maaaring may ibang taong nakalaan para sa iyo kung ikaw lamang ay marunong maghintay.
+
+</div>
+
+<a href="d.html"> <img class="left" src="left.png"></a>
+ <a href="f.html"> <img class="right" src="right.png"></a>
+</section>
+
+
+</body>
+</html>

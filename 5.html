@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Once upon a time</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="new.css" type="text/css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+</style>
+<script language="javascript">
+	
+	function myFunction1() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    ul = document.getElementById("myUL");
+    filter = input.value.toUpperCase();
+    // if the input is empty hide the list
+    if(filter.trim().length < 1) {
+        ul.style.display = "none";
+        return false;
+    } else {
+        ul.style.display = "block";
+    }
+    
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        
+        // This is when you want to find words that contain the search string
+     if (a.innerHTML.toUpperCase().indexOf(filter) > -1) { 
+        li[i].style.display = "";
+     } else {
+        li[i].style.display = "none";
+    } 
+
+	}
+}
+
+
+</script></head>
+</head>
+<body>
+
+  <header class="header">
+    <img class="logoheader"src="Kidbuks1.png">
+   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for book title..." title="Type in a book title">
+   <ul id="myUL">
+     <li><a href="a.html">Ang daga at ang leon</a></li>
+     <li><a href="b.html">Ang aso at ang uwak</a></li>
+     <li><a href="c.html">Ang alamat ng butiki</a></li>
+     <li><a href="d.html">Ang alamat ng rosas</a></li>
+     <li><a href="e.html">Ang alamat ng saging</a></li>
+     <li><a href="f.html">Ang alamat ng sampaguita</a></li>
+     <li><a href="g.html">Ang alamat ng Pilipinas</a></li>
+     <li><a href="h.html">Talinghaga tungkol sa tatlong alipin</a></li>
+     <li><a href="i.html">Parabula sa sampung dalaga</a></li>
+     <li><a href="j.html">Parabula sa nawawalang tupa</a></li>
+     <li><a href="k.html">Ang babaeng maggagatas</a></li>
+     <li><a href="l.html">Ang babaeng ubod ng talino</a></li>
+     <li><a href="m.html">Bakit itim ang kulay ng uwak?</a></li>
+     <li><a href="n.html">Bakit dinadagit ng lawin ang mga sisiw?</a></li>
+     <li><a href="o.html">Si Juan na laging wala sa klase</a></li>
+     <li><a href="p.html">Count wisely</a></li>
+     <li><a href="q.html">The boy who cried wolf</a></li>
+     <li><a href="r.html">When adversity knocks</a></li>
+     <li><a href="s.html">The woodcutter and the golden axe</a></li>
+     <li><a href="t.html">The other side of the wall</a></li>
+     <li><a href="1.html">Good company, bad company</a></li>
+     <li><a href="2.html">Controlling anger</a></li>
+     <li><a href="3.html">True friends love you anyway</a></li>
+     <li><a href="4.html">The dog at the wall</a></li>
+     <li><a href="5.html">Bad habits</a></li>
+     <li><a href="6.html">The camel and the baby</a></li>
+     <li><a href="7.html">The farmer and the well</a></li>
+     <li><a href="8.html">The miser and his gold</a></li>
+     <li><a href="9.html">The four friends</a></li>
+     <li><a href="10.html">The wet pants</a></li>
+   
+     
+   </ul>
+   </header>
+   
+   <section>
+     <nav>
+       <table class="tab">
+     <tr onclick="window.location='new.html';"><td class="t"><img class="icon" src="home.png"><a class="link" href="new.html" target="books"> HOME</a></td></tr>
+   
+   <tr onclick="javascript: myFunction1('myDIV')"><td class="t"><img class="icon" src="books.png"><a class="dd" href ="#">BOOKS</a>
+   <div id="myDIV" class="dropdown-content">
+       <a href="1.html" target="books">► Good company, bad company</a>
+       <a href="2.html" target="books">► Controlling anger</a>
+       <a href="3.html" target="books">► True friends love you anyway</a>
+       <a href="4.html" target="books">► The dog at the wall</a>
+       <a href="5.html" target="books">► Bad habits</a>
+       <a href="6.html" target="books">► The camel and the baby</a>
+       <a href="7.html" target="books">► The farmer and the well</a>
+       <a href="8.html" target="books">► The miser and his gold</a>
+       <a href="9.html" target="books">► The four friends</a>
+       <a href="10.html" target="books">► The wet pants</a>    
+       <a href="a.html" target="books">► Ang daga at ang leon</a>
+       <a href="b.html" target="books">► Ang aso at ang uwak</a>
+       <a href="c.html" target="books">► Ang alamat ng butiki</a>
+     <a href="d.html" target="books">► Ang alamat ng rosas</a>
+       <a href="e.html" target="books">► Ang alamat ng saging</a>
+       <a href="f.html" target="books">► Ang alamat ng sampaguita</a>
+     <a href="g.html" target="books">► Ang alamat ng Pilipinas</a>
+       <a href="h.html" target="books">► Talinghaga tungkol sa tatlong alipin</a>
+       <a href="i.html" target="books">► Parabula sa sampung dalaga</a>
+     <a href="j.html" target="books">► Parabula sa nawawalang tupa</a>
+       <a href="k.html" target="books">► Ang babaeng maggagatas</a>
+       <a href="l.html" target="books">► Ang babaeng ubod ng talino</a>
+       <a href="m.html" target="books">► Bakit itim ang kulay ng uwak?</a>
+       <a href="n.html" target="books">► Bakit dinadagit ng lawin ang mga sisiw?</a>
+       <a href="o.html" target="books">► Si Juan na laging wala sa klase</a>
+       <a href="p.html" target="books">► Count wisely</a>
+       <a href="q.html" target="books">► The boy who cried wolf</a>
+       <a href="r.html" target="books">► When adversity knocks</a>
+       <a href="s.html" target="books">► The woodcutter and the golden axe</a>
+       <a href="t.html" target="books">► The other side of the wall</a>
+   </div></a></td></tr> 
+     <tr onclick="window.location='sources.html';"><td class="t"><img class="icon" src="comics.png"><a class="link" href="sources.html" target="b">SOURCE</a></td></tr>
+     <tr tr onclick="window.location='about.html';"><td class="t"><img class="icon" src="author.png"><a class="link" href="about.html" target="b">ABOUT</a></td></tr>
+   </table>
+   
+     </nav>
+  
+  <article>
+  <img class="bookss" src="habit.jpg">
+		<a href="new.html"><img class="ex" src="exit.png"></a>
+		<div class="pg">
+		<h1 class="title">Bad habits</h1> 
+        A wealthy businessman was worried about his son’s bad habits. He sought counsel from a wise, old man. The old man met the man’s son and took him out for a stroll. They walked into the woods, and the old man showed the boy a small sapling and asked him to pull it out. The boy did so with ease, and they walked on. <br>
+
+        The old man then asked the boy to pull out a small plant. The boy did that too, with a little effort. As they walked, the old man asked the boy to pull out the bush, which he did. The next was a small tree, which the child had to struggle a lot to pull out. Finally, the old man showed him a bigger tree and asked the child to pull it out.<br>
+
+        The child failed to pull it out even after trying several times, in different ways. The old man looks at the boy, smiles and says, “So is the case with habits, good or bad”.<br><br>
+
+        Moral<br>
+        Bad habits are hard to get rid of once they have settled in our system. It is best to get rid of them early on.
+
+
+</div>
+
+<a href="4.html"> <img class="left" src="left.png"></a>
+ <a href="6.html"> <img class="right" src="right.png"></a>
+</section>
+
+
+</body>
+</html>
